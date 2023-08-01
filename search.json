@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "myblog",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 29, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\n  \n\n\n\n\nFirst File\n\n\n\n\n\nTesting Quarto\n\n\n\n\n\n\nJul 26, 2023\n\n\nYour Name\n\n\n\n\n\n\nNo matching items"
+    "text": "Introduction\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 29, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -16,30 +16,23 @@
   {
     "objectID": "posts/Topics.html",
     "href": "posts/Topics.html",
-    "title": "First File",
+    "title": "Introduction",
     "section": "",
-    "text": "This should include a description of your data, a link to the source(s) of your data, your motivation for looking at the data, and the question(s) that you are seeking to address."
-  },
-  {
-    "objectID": "posts/Topics.html#introduction",
-    "href": "posts/Topics.html#introduction",
-    "title": "First File",
-    "section": "",
-    "text": "This should include a description of your data, a link to the source(s) of your data, your motivation for looking at the data, and the question(s) that you are seeking to address."
+    "text": "This should include a description of your data, a link to the source(s) of your data, your motivation for looking at the data, and the question(s) that you are seeking to address.\nWhat is one activity that relieves you of your stress? Gaming? Reading? One activity that I would want to take up is painting. When I say painting, I mean follow in the footsteps of the iconic Bob Ross of course. Bob Ross is known for his series of relazing painting videos that anyone can take up. But what makes them so relaxing? Is it the paintings themselves, or is it the way Bob Ross speaks? By exploring this Bob Ross dataset and using the Youtube APi to analyze the videos of Bob Ross, I hope to answer these questions.\nhttps://github.com/fivethirtyeight/data/tree/master/bob-ross"
   },
   {
     "objectID": "posts/Topics.html#data-info",
     "href": "posts/Topics.html#data-info",
-    "title": "First File",
+    "title": "Introduction",
     "section": "Data Info",
-    "text": "Data Info\nThis section does not need to be polished yet, but it should be a good foundation This can include summary information about the data, summary statistics where appropriate, an identification of where there may be missing/incorrect/outlier data, and data preprocessing It should include at least 4 exploratory data visualizations"
+    "text": "Data Info\nThis section does not need to be polished yet, but it should be a good foundation This can include summary information about the data, summary statistics where appropriate, an identification of where there may be missing/incorrect/outlier data, and data preprocessing It should include at least 4 exploratory data visualizations\nThe Bob Ross dataset includes a comprehensive list of all the episodes and the individual elements of the paintings, such as trees. The dataset is sorted with a 0 if not in the episode and 1 if in the episode. There shouldn’t be much cleaning of this dataset except for excluding episode and their titles to focus on element counts.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"https://raw.githubusercontent.com/fivethirtyeight/data/master/bob-ross/elements-by-episode.csv\")\n# Remove non-numeric columns (EPISODE and TITLE)\ndf = df.drop(columns=['EPISODE', 'TITLE'])\n\n# Sum the values for each category for all episodes\ncategory_sums = df.sum()\n\n# Create a bar plot to visualize the sums of all categories\nplt.figure(figsize=(12, 6))\ncategory_sums.plot(kind='bar')\nplt.xlabel('Categories')\nplt.ylabel('Sums')\nplt.title('Sums of All Categories for Each Episode')\nplt.xticks(rotation=45, ha='right')\nplt.tight_layout()\nplt.show()"
   },
   {
     "objectID": "posts/Topics.html#analysis",
     "href": "posts/Topics.html#analysis",
-    "title": "First File",
+    "title": "Introduction",
     "section": "Analysis",
-    "text": "Analysis\nThis section also does not need to be polished yet, but it should be a good foundation This should include code for data analysis directly relevant to your question(s) of interest Include an additional 4 data visualizations that are directly relevant to your topic Or describe 4 data visualizations that you want to make"
+    "text": "Analysis\nThis section also does not need to be polished yet, but it should be a good foundation This should include code for data analysis directly relevant to your question(s) of interest Include an additional 4 data visualizations that are directly relevant to your topic Or describe 4 data visualizations that you want to make\nI want to use the Youtube API to look at the transcripts of Bob Ross episodes and look at frequent words using bar graphs."
   },
   {
     "objectID": "posts/welcome/index.html",
