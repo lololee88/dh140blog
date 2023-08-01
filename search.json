@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "myblog",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 29, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\n  \n\n\n\n\nFirst File\n\n\n\n\n\nTesting Quarto\n\n\n\n\n\n\nJul 26, 2023\n\n\nYour Name\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/Topics.html",
+    "href": "posts/Topics.html",
+    "title": "First File",
+    "section": "",
+    "text": "This should include a description of your data, a link to the source(s) of your data, your motivation for looking at the data, and the question(s) that you are seeking to address."
+  },
+  {
+    "objectID": "posts/Topics.html#introduction",
+    "href": "posts/Topics.html#introduction",
+    "title": "First File",
+    "section": "",
+    "text": "This should include a description of your data, a link to the source(s) of your data, your motivation for looking at the data, and the question(s) that you are seeking to address."
+  },
+  {
+    "objectID": "posts/Topics.html#data-info",
+    "href": "posts/Topics.html#data-info",
+    "title": "First File",
+    "section": "Data Info",
+    "text": "Data Info\nThis section does not need to be polished yet, but it should be a good foundation This can include summary information about the data, summary statistics where appropriate, an identification of where there may be missing/incorrect/outlier data, and data preprocessing It should include at least 4 exploratory data visualizations"
+  },
+  {
+    "objectID": "posts/Topics.html#analysis",
+    "href": "posts/Topics.html#analysis",
+    "title": "First File",
+    "section": "Analysis",
+    "text": "Analysis\nThis section also does not need to be polished yet, but it should be a good foundation This should include code for data analysis directly relevant to your question(s) of interest Include an additional 4 data visualizations that are directly relevant to your topic Or describe 4 data visualizations that you want to make"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  }
+]
